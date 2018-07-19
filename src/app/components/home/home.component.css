@@ -1,0 +1,14 @@
+.home {
+  background: #252a2b;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.iner {
+  background:url('../../../assets/img/move.gif') no-repeat center / cover;
+  height: 50%;
+  width: 50%;
+}

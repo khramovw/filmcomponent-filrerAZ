@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+
+    <span class="plus">В избранное добавлено: {{plusOne}} элементов</span>
+    <span class="example-spacer"></span>
+
+    <mat-form-field>
+      <mat-select [(value)]="selected" placeholder="Сортировка">
+        <mat-option *ngFor="let option of sortList"
+                    [value]="option.value"
+                    (click)="sortListFilm ()"
+        >
+          {{option.viewValue}}
+        </mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<div class="wraper">
+
+  <div class="film" *ngFor="let film of catalog">
+    <app-film-item [film]="film" (favorite)="counterFavorite()"></app-film-item>
+  </div>
+
+</div>
+

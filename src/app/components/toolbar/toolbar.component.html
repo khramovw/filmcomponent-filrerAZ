@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="logo">Films catalog</span>
+    <span class="example-spacer"></span>
+
+    <button mat-raised-button
+            routerLink="films"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}"
+            matTooltip="Список фильмов"
+    >
+      <mat-icon class="example-icon">list</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <button mat-raised-button routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <i class="material-icons">theaters</i>
+    </button>
+
+  </mat-toolbar-row>
+</mat-toolbar>
